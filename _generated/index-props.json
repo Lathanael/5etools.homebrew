@@ -1,0 +1,8 @@
+{
+  "background":{
+    "background/Diplomat.json":"background"
+  }
+  "subclass":{
+    "subclass/Circle of Spirits.json":"subclass"
+  }
+}

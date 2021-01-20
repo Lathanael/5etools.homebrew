@@ -1,0 +1,88 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "baDiplomat",
+                "abbreviation": "Brew",
+                "full": "Lathanael",
+                "authors": [
+                    "Lathanael"
+                ],
+                "version": "1.0.0",
+                "url": "https://github.com/Lathanael/5etools.homebrew",
+                "targetSchema": "1.0.0"
+            }
+        ],
+        "dateAdded": 1611178974,
+        "dateLastModified": 0
+    },
+    "background": [
+        {
+            "name": "Diplomat",
+            "source": "baDiplomat",
+            "skillProficiencies": [
+                {
+                    "history": true,
+                    "persuasion": true
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Skill Proficiencies",
+                            "entry": "{@skill History}, {@skill Persuasion}"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tool Proficiencies",
+                            "entry": "One type of gaming set"
+                        },
+                        {
+                            "type": "item",
+                            "name": "Equipment",
+                            "entry": "A set of fine clothes, a signet ring, a scroll of pedigree, and a purse containing 25 gp"
+                        }
+                    ]
+                },
+                {
+                    "name": "Feature: Position of Privilege",
+                    "type": "entries",
+                    "entries": [
+                        "Nobles are born and raised to a very different lifestyle than most people ever experience, and their personalities reflect that upbringing. A noble title comes with a plethora of bonds—responsibilities to family, to other nobles (including the sovereign), to the people entrusted to the family’s care, or even to the title itself. But this responsibility is often a good way to undermine a noble."
+                    ],
+                    "data": {
+                        "isFeature": true
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "gaming set": true
+                }
+            ],
+            "startingEquipment": [
+                {
+                    "_": [
+                        {
+                            "special": "fine clothes"
+                        },
+						{
+                            "special": "signet ring"
+                        },
+						{
+                            "special": "scroll of pedigree"
+                        },
+                        {
+                            "special": "pouch",
+                            "containsValue": 25
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
