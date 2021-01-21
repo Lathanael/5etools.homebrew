@@ -39,12 +39,17 @@
                         {
                             "type": "item",
                             "name": "Tool Proficiencies",
-                            "entry": "One type of gaming set"
+                            "entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
                         },
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "One of your choice"
+						},
                         {
                             "type": "item",
                             "name": "Equipment",
-                            "entry": "A set of fine clothes, a signet ring, a scroll of pedigree, and a purse containing 25 gp"
+                            "entry": "A set of {@item fine clothes|phb}, a {@item signet ring|phb}, a scroll of pedigree, and a purse containing 25 gp"
                         }
                     ]
                 },
@@ -59,6 +64,11 @@
                     }
                 }
             ],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
             "toolProficiencies": [
                 {
                     "gaming set": true
@@ -67,18 +77,14 @@
             "startingEquipment": [
                 {
                     "_": [
-                        {
-                            "special": "fine clothes"
-                        },
-						{
-                            "special": "signet ring"
-                        },
+						"fine clothes|phb",
+						"signet ring|phb",
 						{
                             "special": "scroll of pedigree"
                         },
                         {
                             "special": "pouch",
-                            "containsValue": 25
+                            "containsValue": 2500
                         }
                     ]
                 }

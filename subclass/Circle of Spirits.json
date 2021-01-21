@@ -20,112 +20,216 @@
         {
             "name": "Circle of the Spirits",
             "source": "suCoS",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"spider climb",
+							"web"
+						],
+						"5": [
+							"gaseous form",
+							"stinking cloud"
+						],
+						"7": [
+							"greater invisibility",
+							"stone shape"
+						],
+						"9": [
+							"cloudkill",
+							"insect plague"
+						]
+					}
+				}
+			],
             "subclassFeatures": [
-                "Circle of the Root and Stem|Druid||Root and Stem|mfovcotras|2",
-                "Forest Wisdom|Druid||Root and Stem|mfovcotras|6",
-                "Deep Roots|Druid||Root and Stem|mfovcotras|10",
-                "Arboreal Form|Druid||Root and Stem|mfovcotras|14"
+                "Circle of the Spirits|Druid||Spirits|suCoS|2",
+                "Spiritual Regrowth|Druid||Spirits|suCoS|6",
+                "Chimera Soul|Druid||Spirits|suCoS|10",
+                "Spiritual Wings|Druid||Spirits|suCoS|14"
             ],
-            "shortName": "Spirits Druid",
+            "shortName": "Spirits",
             "className": "Druid",
             "classSource": "PHB"
         }
     ],
     "subclassFeature": [
         {
-            "name": "Circle of the Root and Stem",
-            "source": "mfovcotras",
-            "page": 64,
+            "name": "Circle of the Spirits",
+            "source": "suCoS",
+            "page": 1,
             "className": "Druid",
             "classSource": "PHB",
-            "subclassShortName": "Root and Stem",
-            "subclassSource": "mfovcotras",
+            "subclassShortName": "Spirits",
+            "subclassSource": "suCoS",
             "level": 2,
             "entries": [
                 "The druids of the circle of the root and stem revere trees and plants above all, identifying them as the foundation upon which all of nature's glory is built. These druids tend to vast and beautiful woodlands, taking painstaking, personal care of every single plant that grows within. The circle's most powerful druids strive to become trees themselves, using their divine magic to transform their bodies into rugged towers of bark and leaf, the better to guard their sacred forests.",
                 {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Leaf Mask Transformation|Druid||Root and Stem|mfovcotras|2"
-                },
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Cantrip|Druid||Spirits|suCoS|2"
+				},
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Thorny Flesh|Druid||Root and Stem|mfovcotras|2"
-                }
+                    "subclassFeature": "Spirit Shape|Druid||Spirits|suCoS|2"
+                },
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Spirits|suCoS|2"
+				}
             ]
         },
         {
-            "type": "entries",
-            "name": "Leaf Mask Transformation",
-            "entries": [
-                "Starting when you choose this circle at 2nd level, you can use your Wild Shape to transform into plants as well as beasts. You cannot use this ability to become a spore servant of any kind, however.",
-                "While transformed into a plant, you can cast the cantrips shillelagh and thorn whip, requiring no material components, even if you would not normally know them."
-            ],
-            "source": "mfovcotras",
-            "page": 64,
-            "className": "Druid",
-            "classSource": "PHB",
-            "subclassShortName": "Root and Stem",
-            "subclassSource": "mfovcotras",
-            "level": 2,
-            "header": 1
-        },
+			"name": "Bonus Cantrip",
+			"source": "suCoS",
+			"page": 1,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"You learn the {@spell primal savagery} cantrip. This cantrip does not count against your number of Cantrips Known."
+			]
+		},
         {
-            "type": "entries",
-            "name": "Thorny Flesh",
-            "entries": [
-                "Also at 2nd level, your skin takes on a rough, bark-like appearance, studded with sharp thorns. Your AC can't be less than 16, regardless of what kind of armor you are wearing. Also, whenever you are hit with a melee weapon attack, you can use your reaction to deal 1d4 plus your Wisdom modifier piercing damage to the attacker. These effects apply while you are Wildshaped."
-            ],
-            "source": "mfovcotras",
-            "page": 64,
-            "className": "Druid",
-            "classSource": "PHB",
-            "subclassShortName": "Root and Stem",
-            "subclassSource": "mfovcotras",
-            "level": 2,
-            "header": 1
-        },
-        {
-            "name": "Forest Wisdom",
-            "source": "mfovcotras",
-            "page": 64,
-            "className": "Druid",
-            "classSource": "PHB",
-            "subclassShortName": "Root and Stem",
-            "subclassSource": "mfovcotras",
-            "level": 6,
-            "header": 2,
-            "entries": [
-                "Starting at 6th level, you can tap into the ancient wisdom of the trees. Whenever you would make an Intelligence check to recall lore or past events, you can make a Wisdom (Nature) check instead.",
-                "In addition, you can cast the spell speak with plants at will, without using a spell slot. This spell does not count against the total number of druid spells you can prepare."
-            ]
-        },
-        {
-            "name": "Deep Roots",
-            "source": "mfovcotras",
-            "page": 64,
-            "className": "Druid",
-            "classSource": "PHB",
-            "subclassShortName": "Root and Stem",
-            "subclassSource": "mfovcotras",
-            "level": 10,
-            "header": 2,
-            "entries": [
-                "At 10th level, your connection to the magic of the earth is so strong that you gain a measure of its solidity. You can't be pushed, shoved, knocked prone or subjected to any other form of involuntary movement as long as your feet are on natural ground. You also have advantage on Strength checks and Strength saving throws."
-            ]
-        },
-        {
-            "name": "Arboreal Form",
-            "source": "mfovcotras",
-            "page": 64,
-            "className": "Druid",
-            "classSource": "PHB",
-            "subclassShortName": "Root and Stem",
-            "subclassSource": "mfovcotras",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "By 14th level, you have finally learned to become a tree. You can now use your Wild Shape to transform into an awakened tree, or you can expend two uses of your Wildshape to transform into a treant. While in this form, you add your Wisdom modifier to damage rolls for your slam attack, which is considered magical for the purposes of overcoming resistance and immunity."
-            ]
-        }
+			"name": "Spirit Shape",
+			"source": "suCoS",
+			"page": 1,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Spirits feature}",
+				"When you choose this circle at 2nd level, you gain an alternate use for Wild Shape. As a bonus action, you can shape your soul to incorporate a beastial aspect.",
+				"While your body remains unchanged, the magical essence fills you with a unique power depending on which aspect you assume, granting potent abilities. When you use Spirit Shape, you can attune to a primal spirit one minute. Chose one of the following Spritual Aspects:"
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aspect of the Bear",
+							"entry": "You gain supernatural strength and your magic impacts with staggering force. Your Strength ability score becomes equal to your Wisdom ability score (if it was lower). You can add your Strength modifier to damage dealt by melee spell attacks."
+						},
+						{
+							"type": "item",
+							"name": "Aspect of the Turtle",
+							"entry": "You gain supernatural endurance and perseverance to carry on through a rain of blows. You can add your Wisdom modifier to Constitution saving throws."
+						},
+						{
+							"type": "item",
+							"name": "Aspect of the Tiger",
+							"entry": "You gain a supernatural agility and unrelenting ferocity weaving your magic and attacks together. When you make am melee spell attack as part of your action, you can make one melee weapon attack as a bonus action."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "suCoS",
+			"page": 1,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Spirits feature}",
+				"You have formed a bond with the spirits of the worlds. Your link with these spirits grants you access to some spells when you reach certain levels in this class, as shown on the Circle of teh Spirits Spells table.",
+				"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+				{
+					"type": "table",
+					"caption": "Circle of teh Spirits Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell armor of agathys}, {@spell cure wounds}"
+						],
+						[
+							"3rd",
+							"{@spell shadow blade}, {@spell mirror image}"
+						],
+						[
+							"5th",
+							"{@spell haste}, {@spell spirit guardians}"
+						],
+						[
+							"7th",
+							"{@spell fire shield}, {@spell guardian of faith}"
+						],
+						[
+							"9th",
+							"{@spell steel wind strike}, {@spell wrath of nature}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spiritual Regrowth",
+			"source": "suCoS",
+			"page": 2,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Spirits feature}",
+				"Whenever you cast a spell while Spirit Shaped, you recover hit points equal to twice the spell level of the spell cast."
+			]
+		},
+		{
+			"name": "Chimera Soul",
+			"source": "suCoS",
+			"page": 2,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Spirits feature}",
+				"You can expend two uses of your wild shape at the same time to assume two Spiritual Aspects at the same time."
+			]
+		},
+		{
+			"name": "Spiritual Wings",
+			"source": "suCoS",
+			"page": 2,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Spirits feature}",
+				"You can weave wings of spirit that keep you aloft. While under of the effect of Spirit Shape, you gain a flying speed of 30 feet."
+			]
+		}
     ]
 }
