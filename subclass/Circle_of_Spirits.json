@@ -1,0 +1,235 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "suCoS",
+                "abbreviation": "Brew",
+                "full": "Lathanael",
+                "authors": [
+                    "Lathanael"
+                ],
+                "version": "1.0.0",
+                "url": "https://github.com/Lathanael/5etools.homebrew",
+                "targetSchema": "1.0.0"
+            }
+        ],
+        "dateAdded": 1611178974,
+        "dateLastModified": 0
+    },
+    "subclass": [
+        {
+            "name": "Circle of the Spirits",
+            "source": "suCoS",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"spider climb",
+							"web"
+						],
+						"5": [
+							"gaseous form",
+							"stinking cloud"
+						],
+						"7": [
+							"greater invisibility",
+							"stone shape"
+						],
+						"9": [
+							"cloudkill",
+							"insect plague"
+						]
+					}
+				}
+			],
+            "subclassFeatures": [
+                "Circle of the Spirits|Druid||Spirits|suCoS|2",
+                "Spiritual Regrowth|Druid||Spirits|suCoS|6",
+                "Chimera Soul|Druid||Spirits|suCoS|10",
+                "Spiritual Wings|Druid||Spirits|suCoS|14"
+            ],
+            "shortName": "Spirits",
+            "className": "Druid",
+            "classSource": "PHB"
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Circle of the Spirits",
+            "source": "suCoS",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Spirits",
+            "subclassSource": "suCoS",
+            "level": 2,
+            "entries": [
+                "The druids of the circle of the root and stem revere trees and plants above all, identifying them as the foundation upon which all of nature's glory is built. These druids tend to vast and beautiful woodlands, taking painstaking, personal care of every single plant that grows within. The circle's most powerful druids strive to become trees themselves, using their divine magic to transform their bodies into rugged towers of bark and leaf, the better to guard their sacred forests.",
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Cantrip|Druid||Spirits|suCoS|2"
+				},
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spirit Shape|Druid||Spirits|suCoS|2"
+                },
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Spirits|suCoS|2"
+				}
+            ]
+        },
+        {
+			"name": "Bonus Cantrip",
+			"source": "suCoS",
+			"page": 1,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"You learn the {@spell primal savagery} cantrip. This cantrip does not count against your number of Cantrips Known."
+			]
+		},
+        {
+			"name": "Spirit Shape",
+			"source": "suCoS",
+			"page": 1,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Spirits feature}",
+				"When you choose this circle at 2nd level, you gain an alternate use for Wild Shape. As a bonus action, you can shape your soul to incorporate a beastial aspect.",
+				"While your body remains unchanged, the magical essence fills you with a unique power depending on which aspect you assume, granting potent abilities. When you use Spirit Shape, you can attune to a primal spirit one minute. Chose one of the following Spritual Aspects:"
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aspect of the Bear",
+							"entry": "You gain supernatural strength and your magic impacts with staggering force. Your Strength ability score becomes equal to your Wisdom ability score (if it was lower). You can add your Strength modifier to damage dealt by melee spell attacks."
+						},
+						{
+							"type": "item",
+							"name": "Aspect of the Turtle",
+							"entry": "You gain supernatural endurance and perseverance to carry on through a rain of blows. You can add your Wisdom modifier to Constitution saving throws."
+						},
+						{
+							"type": "item",
+							"name": "Aspect of the Tiger",
+							"entry": "You gain a supernatural agility and unrelenting ferocity weaving your magic and attacks together. When you make am melee spell attack as part of your action, you can make one melee weapon attack as a bonus action."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "suCoS",
+			"page": 1,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Spirits feature}",
+				"You have formed a bond with the spirits of the worlds. Your link with these spirits grants you access to some spells when you reach certain levels in this class, as shown on the Circle of teh Spirits Spells table.",
+				"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+				{
+					"type": "table",
+					"caption": "Circle of teh Spirits Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell armor of agathys}, {@spell cure wounds}"
+						],
+						[
+							"3rd",
+							"{@spell shadow blade}, {@spell mirror image}"
+						],
+						[
+							"5th",
+							"{@spell haste}, {@spell spirit guardians}"
+						],
+						[
+							"7th",
+							"{@spell fire shield}, {@spell guardian of faith}"
+						],
+						[
+							"9th",
+							"{@spell steel wind strike}, {@spell wrath of nature}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spiritual Regrowth",
+			"source": "suCoS",
+			"page": 2,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Spirits feature}",
+				"Whenever you cast a spell while Spirit Shaped, you recover hit points equal to twice the spell level of the spell cast."
+			]
+		},
+		{
+			"name": "Chimera Soul",
+			"source": "suCoS",
+			"page": 2,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Spirits feature}",
+				"You can expend two uses of your wild shape at the same time to assume two Spiritual Aspects at the same time."
+			]
+		},
+		{
+			"name": "Spiritual Wings",
+			"source": "suCoS",
+			"page": 2,
+			"srd": false,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "suCoS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Spirits feature}",
+				"You can weave wings of spirit that keep you aloft. While under of the effect of Spirit Shape, you gain a flying speed of 30 feet."
+			]
+		}
+    ]
+}
