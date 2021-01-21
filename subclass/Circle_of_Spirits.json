@@ -108,7 +108,7 @@
 			"entries": [
 				"{@i 2nd-level Circle of the Spirits feature}",
 				"When you choose this circle at 2nd level, you gain an alternate use for Wild Shape. As a bonus action, you can shape your soul to incorporate a beastial aspect.",
-				"While your body remains unchanged, the magical essence fills you with a unique power depending on which aspect you assume, granting potent abilities. When you use Spirit Shape, you can attune to a primal spirit one minute. Chose one of the following Spritual Aspects:"
+				"While your body remains unchanged, the magical essence fills you with a unique power depending on which aspect you assume, granting potent abilities. When you use Spirit Shape, you can attune to a primal spirit one minute. Chose one of the following Spritual Aspects:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
