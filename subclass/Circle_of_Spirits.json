@@ -165,7 +165,7 @@
 						],
 						[
 							"3rd",
-							"{@spell shadow blade}, {@spell mirror image}"
+							"{@spell shadow blade|XGE}, {@spell mirror image}"
 						],
 						[
 							"5th",
@@ -177,7 +177,7 @@
 						],
 						[
 							"9th",
-							"{@spell steel wind strike}, {@spell wrath of nature}"
+							"{@spell steel wind strike|XGE}, {@spell wrath of nature|XGE}"
 						]
 					]
 				}
