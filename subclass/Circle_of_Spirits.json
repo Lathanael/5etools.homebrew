@@ -23,21 +23,25 @@
 			"additionalSpells": [
 				{
 					"prepared": {
+						"2": [
+							"armor of agathys",
+							"cure wounds"
+						],
 						"3": [
-							"spider climb",
-							"web"
+							"mirror image",
+							"shadow blade"
 						],
 						"5": [
-							"gaseous form",
-							"stinking cloud"
+							"haste",
+							"spirit guardians"
 						],
 						"7": [
-							"greater invisibility",
-							"stone shape"
+							"fire shield",
+							"guardian of faith"
 						],
 						"9": [
-							"cloudkill",
-							"insect plague"
+							"steel wind strike",
+							"wrath of nature"
 						]
 					}
 				}
@@ -91,7 +95,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"You learn the {@spell primal savagery} cantrip. This cantrip does not count against your number of Cantrips Known."
+				"You learn the {@spell primal savagery|xge} cantrip. This cantrip does not count against your number of Cantrips Known."
 			]
 		},
         {
@@ -165,7 +169,7 @@
 						],
 						[
 							"3rd",
-							"{@spell shadow blade|XGE}, {@spell mirror image}"
+							"{@spell shadow blade|xge}, {@spell mirror image}"
 						],
 						[
 							"5th",
@@ -177,7 +181,7 @@
 						],
 						[
 							"9th",
-							"{@spell steel wind strike|XGE}, {@spell wrath of nature|XGE}"
+							"{@spell steel wind strike|xge}, {@spell wrath of nature|xge}"
 						]
 					]
 				}
